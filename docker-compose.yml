@@ -1,12 +1,12 @@
 db:
   image: postgres
-
 web:
    build: .
-   ports:
-   - '3000:3000'
+   command: bundle exec rails s -p 3000 -b '0.0.0.0'
    volumes:
-   - './:/var/app'
-   working_dir: /var/app
+   - './: /leopie'
+   working_dir: /leopie
+   depends_on:
+    - db
    links:
-   - db:db
+    - db
