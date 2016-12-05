@@ -11,7 +11,8 @@ default: &default
   password: teja1217
   pool: 5
   timeout: 5000
-
+  host : db
+  
 development:
   <<: *default
   database: leopie
