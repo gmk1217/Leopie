@@ -6,7 +6,7 @@ web:
    volumes:
    - './: /leopie'
    working_dir: /leopie
-   depends_on:
-    - db
    links:
     - db
+   hosts:
+     db
