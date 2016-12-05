@@ -8,5 +8,4 @@ web:
    working_dir: /leopie
    links:
     - db
-   hosts:
-     db
+ 
